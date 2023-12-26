@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div>
+        <h1 class="MainHeader"> Tic Tac Toe</h1>
+    </div>
+    <div class="gameboard">
+        <div id="00" class="tile"><h1></h1></div>
+        <div id="01"class="tile"><h1></h1></div>
+        <div id="02"class="tile"><h1></h1></div>
+        <div id="10"class="tile"><h1></h1></div>
+        <div id="11"class="tile"><h1></h1></div>       
+        <div id="12"class="tile"><h1></h1></div>
+        <div id="20"class="tile"><h1></h1></div>
+        <div id="21"class="tile"><h1></h1></div>        
+        <div id="22"class="tile"><h1></h1></div>
+    </div>
+
+    <div>
+        <button onclick=game.clearBoard()>New Game</button>
+    </div>
+
+    <dialog id="winDialog">
+        <p></p>
+        <button id="closeWinDialog">Close</button>
+    </dialog>
+    <script src="script.js"></script>    
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    margin-top: 50px;
+    font-family: Roboto;
+    padding: 0;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainHeader {
+    margin: 0;
+    font-size: 100px;
+}
+.gameboard {
+    background-color: black;
+    width: 35%;
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.gameboard div:hover {
+    background-color: #1a3c6c;
+}
+
+.gameboard div {
+    display: flex;
+    background-color: rgb(51, 142, 221);
+    justify-content: center;
+    align-items: center;
+}
+
+.gameboard div h1{
+    font-size: 60px;
+}
+
+
+button {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(51, 142, 221);
+    border: solid;
+    border-color: black;
+    border-radius: 30px;
+    margin: 30px;
+    padding: 15px;
+    height: 100%;
+    width: 450px;
+}
+
+::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+
+
+  #winDialog p {
+    font: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
